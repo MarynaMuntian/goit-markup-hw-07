@@ -10,6 +10,15 @@
   --portfolio-border-color: #eeeeee;
   --grey-color: #afb1b8;
   --footer-icon-bgd: rgba(255, 255, 255, 0.1);
+  --grey-dark-color: rgba(47, 48, 58, 0.8);
+  --grey-light-color: rgba(255, 255, 255, 0.6);
+  --grey-medium-color: rgba(255, 255, 255, 0.3);
+  --overlay-color: rgba(33, 150, 243, 0.9);
+  --backdrop-color: rgba(0, 0, 0, 0.2);
+  --grey-placeholder-color: rgba(117, 117, 117, 0.5);
+  --gradient-color: rgba(47, 48, 58, 0.4);
+  --grey-modal-color: rgba(0, 0, 0, 0.1);
+  --grey-input-color: rgba(33, 33, 33, 0.2);
 }
 
 body {
@@ -179,8 +188,8 @@ ul {
   margin-right: auto;
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--gradient-color),
+      var(--gradient-color)
     ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -309,7 +318,7 @@ ul {
   left: 0;
   width: 100%;
   padding: 27px 0;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--grey-dark-color);
 }
 
 .aside-img-title {
@@ -506,7 +515,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--grey-light-color);
 }
 
 .footer p {
@@ -566,9 +575,9 @@ footer input {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--grey-light-color);
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--grey-medium-color);
   border-radius: 4px;
 }
 
@@ -692,7 +701,7 @@ footer input {
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: var(--overlay-color);
   color: var(--white-color);
 }
 
@@ -742,7 +751,7 @@ footer input {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop-color);
   transform: scaleY(1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -777,7 +786,7 @@ footer input {
   align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--grey-modal-color);
   border-radius: 50%;
   background-color: var(--white-color);
   cursor: pointer;
@@ -835,7 +844,7 @@ footer input {
 
 form input {
   padding: 11px 12px 11px 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--grey-input-color);
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -864,7 +873,7 @@ textarea::placeholder {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--grey-placeholder-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -876,7 +885,7 @@ textarea {
   padding: 12px 16px;
   height: 120px;
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--grey-input-color);
   border-radius: 4px;
 }
 
