@@ -199,7 +199,7 @@ ul {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -209,7 +209,7 @@ ul {
   color: var(--white-color);
 }
 
-.hero-btn {
+.hero__btn {
   margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
@@ -227,9 +227,9 @@ ul {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:focus,
-.hero-btn:active {
+.hero__btn:hover,
+.hero__btn:focus,
+.hero__btn:active {
   color: var(--secondary-color);
   background-color: var(--secondary-white-color);
 }
@@ -244,12 +244,12 @@ ul {
   display: flex;
 }
 
-.benefits-item {
+.benefits__item {
   max-width: 270px;
   margin-right: 30px;
 }
 
-.benefits-img {
+.benefits__img {
   display: block;
   text-align: center;
   padding: 25px 100px;
@@ -260,7 +260,7 @@ ul {
   background-color: var(--secondary-white-color);
 }
 
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -270,7 +270,7 @@ ul {
   color: var(--secondary-color);
 }
 
-.benefits-content {
+.benefits__text {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -278,6 +278,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--link-color);
 }
+
+/* Стили для секции "Чем мы занимаемся" */
 
 .aside-box {
   padding-bottom: 94px;
