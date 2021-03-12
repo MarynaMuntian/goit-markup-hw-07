@@ -59,35 +59,31 @@ ul {
 }
 
 /* header */
-.border {
+.page-header {
   border-bottom: 1px solid var(--border-color);
 }
 
-.header {
+.page-header__content {
   display: flex;
   align-items: center;
 }
 
-/* .header a {
-  display: block;
-} */
-
-.logo {
-  font-family: var(--raleway);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.container.header > a {
+.logo-link {
   font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+
+.logo-text {
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .nav {
@@ -98,31 +94,23 @@ ul {
 
 .nav-menu {
   display: flex;
-
   justify-content: space-between;
 }
 
-.nav-menu-contacts {
-  display: flex;
-  margin-left: 305px;
-}
-
-.nav-menu-item {
+.nav-menu__item,
+.nav-menu-contacts__item {
   display: flex;
   align-items: center;
 
   margin-right: 30px;
 }
 
-.nav-menu-item:last-of-type {
+.nav-menu__item:last-of-type,
+.nav-menu-contacts__item:last-of-type {
   margin-right: 0;
 }
 
-/* .nav-menu-mail {
-  display: flex;
-} */
-
-.nav-menu-link {
+.nav-menu__link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -134,17 +122,26 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu-link:hover,
-.nav-menu-link:focus,
-.nav-menu-link:active {
+.nav-menu__link:hover,
+.nav-menu__link:focus,
+.nav-menu__link:active {
   color: var(--accent-color);
 }
 
-.nav-menu-link.current {
+.nav-menu-contacts {
+  display: flex;
+  margin-left: 305px;
+}
+
+.nav-menu-contacts:last-of-type {
+  margin-right: 0;
+}
+
+.nav-menu__link.current {
   color: var(--accent-color);
 }
 
-.nav-menu-link.current::after {
+.nav-menu__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -155,7 +152,7 @@ ul {
   background-color: var(--accent-color);
 }
 
-.nav-menu-link-contacts {
+.nav-menu-contacts__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -165,17 +162,13 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu-contacts:last-of-type {
-  margin-right: 0;
-}
-
-.nav-menu-link-contacts:hover,
-.nav-menu-link-contacts:focus,
-.nav-menu-link-contacts:active {
+.nav-menu-contacts__link:hover,
+.nav-menu-contacts__link:focus,
+.nav-menu-contacts__link:active {
   color: var(--accent-color);
 }
 
-.icon {
+.nav-menu-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
   margin-top: auto;
