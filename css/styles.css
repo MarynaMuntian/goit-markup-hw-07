@@ -19,10 +19,13 @@
   --gradient-color: rgba(47, 48, 58, 0.4);
   --grey-modal-color: rgba(0, 0, 0, 0.1);
   --grey-input-color: rgba(33, 33, 33, 0.2);
+
+  --roboto: 'Roboto', sans-serif;
+  --raleway: 'Raleway', sans-serif;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--roboto);
 }
 
 a {
@@ -70,7 +73,7 @@ ul {
 } */
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -79,7 +82,7 @@ ul {
 }
 
 .container.header > a {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -490,7 +493,7 @@ ul {
 
 .footer-logo-link {
   display: block;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--raleway);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
