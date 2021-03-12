@@ -343,43 +343,43 @@
         <section class="clients">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list">
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="45" height="50">
                   <use href="./images/icons.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="40" height="52">
                   <use href="./images/icons.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="41" height="43">
                   <use href="./images/icons.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="80" height="42">
                   <use href="./images/icons.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="59" height="47">
                   <use href="./images/icons.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a class="clients-img" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__img" href="">
                 <svg width="89" height="46">
                   <use href="./images/icons.svg#icon-logo-6"></use>
                 </svg>
@@ -390,54 +390,56 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="page-footer">
       <div class="container">
         <div>
-          <a class="footer-logo-link" href="index.html"
-            ><span class="logo">Web</span>Studio</a
+          <a class="logo-link logo-link--white" href="index.html"
+            ><span class="logo-text">Web</span>Studio</a
           >
-          <address class="footer-address">
+          <address class="page-footer__address">
             г. Киев, пр-т Леси Украинки, 26
           </address>
-          <ul class="footer-link-list">
+          <ul class="page-footer-contacts">
             <li>
-              <a href="mailto:info@example.com" class="footer-link"
+              <a
+                href="mailto:info@example.com"
+                class="page-footer-contacts__item"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a href="tel:+380991111111" class="footer-link"
+              <a href="tel:+380991111111" class="page-footer-contacts__item"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
         </div>
-        <div class="join-us">
-          <p>Присоединяйтесь</p>
-          <ul class="join-us-list">
-            <li class="join-us-list-item">
-              <a class="join-us-icon" href="">
+        <div class="page-footer-join-us">
+          <p class="page-footer-join-us-title">Присоединяйтесь</p>
+          <ul class="page-footer-join-us-list">
+            <li class="page-footer-join-us-list__item">
+              <a class="page-footer-join-us-list__icon" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-us-list-item">
-              <a class="join-us-icon" href="">
+            <li class="page-footer-join-us-list__item">
+              <a class="page-footer-join-us-list__icon" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-us-list-item">
-              <a class="join-us-icon" href="">
+            <li class="page-footer-join-us-list__item">
+              <a class="page-footer-join-us-list__icon" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-us-list-item">
-              <a class="join-us-icon" href="">
+            <li class="page-footer-join-us-list__item">
+              <a class="page-footer-join-us-list__icon" href="">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -445,14 +447,19 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p>Подпишитесь на рассылку</p>
+        <div class="page-footer-subscribe">
+          <p class="page-footer-subscribe-title">Подпишитесь на рассылку</p>
           <label>
-            <input type="email" name="email" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="page-footer-subscribe-input"
+            />
           </label>
-          <button class="subscribe-button" type="submit">
+          <button class="page-footer-subscribe-button" type="submit">
             Подписаться
-            <svg class="subscribe-icon" width="24" height="24">
+            <svg class="page-footer-subscribe-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
