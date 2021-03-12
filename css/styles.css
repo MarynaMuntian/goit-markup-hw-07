@@ -281,11 +281,11 @@ ul {
 
 /* Стили для секции "Чем мы занимаемся" */
 
-.aside-box {
+.product {
   padding-bottom: 94px;
 }
 
-.aside-title {
+.product__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -295,22 +295,22 @@ ul {
   color: var(--secondary-color);
 }
 
-.aside {
+.product-list {
   display: flex;
   justify-content: space-between;
 }
 
-.aside-item {
+.product-list__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.aside-img {
+.product-list__img {
   display: block;
   max-width: 100%;
 }
 
-.aside-img-box {
+.product-list__box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -319,7 +319,7 @@ ul {
   background-color: var(--grey-dark-color);
 }
 
-.aside-img-title {
+.product-list__title {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -333,12 +333,9 @@ ul {
 /* Стили для блока 3 */
 
 .team {
-  background-color: var(--secondary-white-color);
-}
-
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--secondary-white-color);
 }
 
 .team-title {
@@ -356,7 +353,7 @@ ul {
   justify-content: space-between;
 }
 
-.team-list-item {
+.team-list__item {
   flex-basis: calc(100% / 4 - 30px);
   background-color: var(--white-color);
   border-radius: 4px;
@@ -365,16 +362,16 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list-img {
+.team-list__img {
   display: block;
   max-width: 100%;
 }
 
-.team-list-descr {
+.team-list__descr {
   padding: 30px 32px;
 }
 
-.team-item {
+.team-list__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -383,7 +380,7 @@ ul {
   color: var(--secondary-color);
 }
 
-.team-item-descr {
+.team-list__position {
   margin: 0;
   margin-top: 10px;
   font-weight: 400;
@@ -400,7 +397,7 @@ ul {
   margin-top: 16px;
 }
 
-.team-icon-link {
+.team-icons__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,9 +410,9 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-link:hover,
-.team-icon-link:focus,
-.team-icon-link:active {
+.team-icons__link:hover,
+.team-icons__link:focus,
+.team-icons__link:active {
   color: currentColor;
   background-color: var(--accent-color);
   border-radius: 50%;
