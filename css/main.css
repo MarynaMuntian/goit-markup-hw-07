@@ -984,8 +984,8 @@ ul {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__gallery-link:hover .portfolio-gallery-overlay,
-.portfolio__gallery-link:focus .portfolio-gallery-overlay {
+.portfolio__gallery-link:hover .portfolio__gallery-overlay,
+.portfolio__gallery-link:focus .portfolio__gallery-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1282,7 +1282,7 @@ ul {
   overflow: hidden;
 }
 
-.modal__checkbox-field:checked + .modal-checkbox__icon {
+.modal__checkbox-field:checked + .modal__checkbox-icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
