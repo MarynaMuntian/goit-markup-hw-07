@@ -28,16 +28,6 @@
   }
 }
 
-.page-header__nav-menu-contacts-item {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
 .header-nav__link {
   position: relative;
   display: block;
@@ -56,15 +46,6 @@
   }
 }
 
-.page-header__nav-menu-contacts {
-  display: flex;
-  margin-left: 305px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
-}
-
 .header-nav__link.current {
   color: var(--accent-color);
 
@@ -80,7 +61,26 @@
   }
 }
 
-.page-header__nav-menu-contacts-link {
+.header-contacts__list {
+  display: flex;
+  margin-left: 305px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.header-contacts__item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.header-contacts__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -96,7 +96,7 @@
   }
 }
 
-.page-header__nav-menu-contacts-icon {
+.header-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
   margin-top: auto;
