@@ -513,11 +513,11 @@ ul {
   background-color: var(--secondary-white-color);
 }
 
-.benefits-section {
+.benefits {
   padding: 94px 0;
 }
 
-.benefits {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,18 +581,18 @@ ul {
           justify-content: space-between;
 }
 
-.product__list-item {
+.product__item {
   position: relative;
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
 }
 
-.product__list-img {
+.product__img {
   display: block;
   max-width: 100%;
 }
 
-.product__list-box {
+.product__box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -601,7 +601,7 @@ ul {
   background-color: var(--grey-dark-color);
 }
 
-.product__list-title {
+.product__box-title {
   margin: 0;
   font-weight: 700;
   font-size: 14px;

@@ -17,17 +17,17 @@
   justify-content: space-between;
 }
 
-.product__list-item {
+.product__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.product__list-img {
+.product__img {
   display: block;
   max-width: 100%;
 }
 
-.product__list-box {
+.product__box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -36,7 +36,7 @@
   background-color: var(--grey-dark-color);
 }
 
-.product__list-title {
+.product__box-title {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
