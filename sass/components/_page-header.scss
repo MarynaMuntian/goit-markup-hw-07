@@ -1,24 +1,24 @@
-.page-header {
+.header {
   border-bottom: 1px solid var(--border-color);
 }
 
-.page-header__content {
+.header-content {
   display: flex;
   align-items: center;
 }
 
-.page-header__nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
   margin-left: 93px;
 }
 
-.page-header__nav-menu {
+.header-nav__list {
   display: flex;
   justify-content: space-between;
 }
 
-.page-header__nav-menu-item {
+.header-nav__item {
   display: flex;
   align-items: center;
   margin-right: 30px;
@@ -38,7 +38,7 @@
   }
 }
 
-.page-header__nav-menu-link {
+.header-nav__link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -65,7 +65,7 @@
   }
 }
 
-.page-header__nav-menu-link.current {
+.header-nav__link.current {
   color: var(--accent-color);
 
   &::after {
