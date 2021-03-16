@@ -2,13 +2,13 @@
   padding: 94px 0;
 }
 
-.portfolio__btn-list {
+.filters__list {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
 }
 
-.portfolio__btn-list-item {
+.filters__item {
   margin-right: 8px;
 
   &:last-child {
@@ -16,7 +16,7 @@
   }
 }
 
-.portfolio__btn-list-btn {
+.filters__btn {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -47,18 +47,18 @@
   }
 }
 
-.portfolio__gallery {
+.portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
   margin: -30px 0 0 -30px;
 }
 
-.portfolio__gallery-item {
+.portfolio-gallery__item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 30px 0 0 30px;
 }
 
-.portfolio__gallery-link {
+.portfolio-gallery__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -69,25 +69,25 @@
   }
 }
 
-.portfolio__gallery-link {
-  &:hover .portfolio__gallery-overlay,
-  &:focus .portfolio__gallery-overlay {
+.portfolio-gallery__link {
+  &:hover .portfolio-gallery__overlay,
+  &:focus .portfolio-gallery__overlay {
     transform: translateY(0);
   }
 }
 
-.portfolio__gallery-thumb {
+.portfolio-gallery__thumb {
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-.portfolio__gallery-img {
+.portfolio-gallery__img {
   display: block;
   max-width: 100%;
 }
 
-.portfolio__gallery-overlay {
+.portfolio-gallery__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,7 +101,7 @@
   color: var(--white-color);
 }
 
-.portfolio__gallery-overlay-descr {
+.portfolio-gallery__descr {
   margin: 0;
   padding: 63px 24px;
   font-weight: 400;
@@ -110,13 +110,13 @@
   letter-spacing: 0.03em;
 }
 
-.portfolio__gallery-text {
+.portfolio-gallery__text {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
 }
 
-.portfolio__gallery-text-title {
+.portfolio-gallery__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -125,7 +125,7 @@
   color: var(--secondary-color);
 }
 
-.portfolio__gallery-text-descr {
+.portfolio-gallery__type {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
