@@ -734,7 +734,7 @@ ul {
           justify-content: space-between;
 }
 
-.clients__list-item {
+.clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,7 +748,7 @@ ul {
   height: 90px;
 }
 
-.clients__list-img {
+.clients__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,7 +767,7 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__list-img:hover, .clients__list-img:focus, .clients__list-img:active {
+.clients__img:hover, .clients__img:focus, .clients__img:active {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
